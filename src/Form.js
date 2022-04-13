@@ -18,7 +18,8 @@ export default function Form() {
       humidity: Math.round(response.data.main.humidity),
       wind: Math.round(response.data.wind.speed * 3.6),
       datestamp:new Date(response.data.dt * 1000),
-      country:response.data.sys.country
+      country:response.data.sys.country,
+      icon:response.data.weather[0].icon
       
     });
     console.log(response.data);

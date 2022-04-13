@@ -11,6 +11,11 @@ button {
   width: 102%;
 }
 
+canvas {
+  margin-right: 6px;
+  padding-top:8px;
+}
+
 .Current-details {
   line-height: 5px;
   margin-top: 15px;
@@ -60,9 +65,21 @@ button {
   
 }
 
+.Cel {
+  font-size: 19px;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+  font-weight: bold;
+}
 
+.temp {
+  font-size: 64px;
+}
 
-
+.cityname {
+  font-size: 52px;
+}
 
 .City-Form {
   color : darkblue;
