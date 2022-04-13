@@ -16,6 +16,11 @@ canvas {
   padding-top:8px;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 .Current-details {
   line-height: 5px;
   margin-top: 15px;

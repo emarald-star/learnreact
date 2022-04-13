@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
+import DisplayWeather from "./DisplayWeather";
 
 export default function Weather(props) {
   return (
@@ -12,7 +13,7 @@ export default function Weather(props) {
       <div className="row">
         <div className="col-6">
           <h1 className="temp">
-            <WeatherIcon icon={props.data.icon} />{props.data.temp}<span className="Cel">°C</span></h1>
+            <WeatherIcon icon={props.data.icon} /><DisplayWeather Cels={props.data.temp} /></h1>
         </div>
         <div className="col-6">
           <ul>

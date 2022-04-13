@@ -16,6 +16,9 @@ export default function CurrentDate(props){
     let date = props.value.getDate();
     let year = props.value.getFullYear();
     let minutes = props.value.getMinutes();
+    if (minutes < 10){
+        minutes = `0${minutes}`;
+    }
 
     return(
         <div>{day} {date},{year}  {hour}:{minutes} </div>
