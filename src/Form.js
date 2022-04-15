@@ -19,8 +19,8 @@ export default function Form() {
       wind: Math.round(response.data.wind.speed * 3.6),
       datestamp:new Date(response.data.dt * 1000),
       country:response.data.sys.country,
-      icon:response.data.weather[0].icon
-      
+      icon:response.data.weather[0].icon,
+      coordinates: response.data.coord
     });
     console.log(response.data);
     console.log(`Weather: ${weather.datestamp}`);

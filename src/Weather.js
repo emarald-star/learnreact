@@ -3,6 +3,7 @@ import "./App.css";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
 import DisplayWeather from "./DisplayWeather";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   return (
@@ -17,11 +18,12 @@ export default function Weather(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>Feels-like:{props.data.feels}°C</li>
-            <li>Humidity:{props.data.humidity}%</li>
-            <li>Wind:{props.data.wind}km/hr</li>
+            <li><strong>Feels-like{" "}:</strong>{" "}{props.data.feels}°C</li>
+            <li><strong>Humidity{" "}:</strong><span className="Humidity">{props.data.humidity}</span>%</li>
+            <li><strong>Wind{" "}:</strong><span className="Wind">{props.data.wind}</span>km/hr</li>
           </ul>
         </div>
+        <WeatherForecast value ={props.data.coordinates}/>
       </div>
     </div>
   );
