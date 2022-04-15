@@ -19,7 +19,7 @@ function converFarhenite(){
 
 if (unit === "Celsius"){
     return(
-        <span>{props.Cels}<span className="Cel">°C |<a href="/" onClick={showFarhenite}>°F</a></span></span>
+        <span className="weatherdisplay">{props.Cels}<span className="Cel">°C |<a href="/" onClick={showFarhenite}>°F</a></span></span>
     )
 }
         else {

@@ -12,15 +12,15 @@ export default function Weather(props) {
       <p><CurrentDate  value = {props.data.datestamp}/></p>
       <p>{props.data.desc}</p>
       <div className="row">
-        <div className="col-6">
+        <div className="col-6 p-0">
           <h1 className="temp">
             <WeatherIcon icon={props.data.icon} /><DisplayWeather Cels={props.data.temp} /></h1>
         </div>
-        <div className="col-6">
+        <div className="col-6 p-0">
           <ul>
             <li><strong>Feels-like{" "}:</strong>{" "}{props.data.feels}°C</li>
             <li><strong>Humidity{" "}:</strong><span className="Humidity">{props.data.humidity}</span>%</li>
-            <li><strong>Wind{" "}:</strong><span className="Wind">{props.data.wind}</span>km/hr</li>
+            <li><strong>Wind{" "}:</strong><span className="Wind float-left">{props.data.wind}</span>km/h</li>
           </ul>
         </div>
         <WeatherForecast value ={props.data.coordinates}/>

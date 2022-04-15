@@ -52,6 +52,7 @@ a {
 .App{
   max-width: 800px;
   margin: 80px auto;
+  box-shadow: 10px 10px 20px rgba(48, 195, 80, 0.2);
 }
 
 
@@ -106,4 +107,10 @@ a {
 
 .Forecastdetails {
    text-align: center;
+}
+
+.weatherdisplay {
+
+  font-size: 60px;
+  width: 40px;
 }
